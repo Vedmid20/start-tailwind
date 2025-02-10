@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Parens</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-[#d1a89e] p-4 text-white flex justify-between items-center">
-        <button class="bg-[#d1a89e] px-4 py-2 border-2 border-white rounded-[50px]">ASK THE DOCTOR</button>
-        <div class="flex gap-4 flex justify-between items-center">
+<body class="bg-gray-50">
+    <header class="bg-main p-4 text-white flex justify-evenly items-center">
+        <button class="bg-main px-4 py-2 border-2 border-white rounded-[50px] w-56 font-medium">ASK THE DOCTOR</button>
+        <div class="flex gap-10 justify-around items-center">
             <span>English +38 066 418 77 73</span>
             <span>Polish +38 066 419 77 73</span>
-            <button class="bg-[#d1a89e] px-4 py-2 border-2 border-white rounded-[50px]">WHATSAPP</button>
+            <button class="bg-main px-4 py-2 border-2 border-white rounded-[50px] font-medium w-44">WHATSAPP</button>
             <div class="languages flex flex-row gap-1">
                 <span>EN</span>
                 <span class="font-[300] my-[-0.5px]">|</span>
@@ -20,51 +21,146 @@
             </div>
         </div>
     </header>
+
+    <section class="bg-white p-10">
+        <div class="flex justify-around">
+            <img src="static/logo.png" alt="Logo" class="w-40">
+            <div class="flex justify-evenly items-center gap-10">
+                <a href="javascript:;" class="text-lg text-gray-600">About us</a>
+                <a href="javascript:;" class="text-lg text-gray-600">IVF</a>
+                <a href="javascript:;" class="text-lg text-gray-600">Surrogacy</a>
+                <a href="javascript:;" class="text-lg text-gray-600">Other services</a>
+                <a href="javascript:;" class="text-lg text-gray-600">Blog</a>
+                <a href="javascript:;" class="text-lg text-gray-600">Contacts</a>
+            </div>
+        </div>
+
+    </section>
     
-    <main class="container mx-auto py-10">
-        <h1 class="text-center text-3xl font-semibold text-[#b47b6f] mb-8">BLOG</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Blog Post Card -->
+    <main class="container mx-auto py-10 flex-col justify-center">
+
+        <div class="flex justify-center">
+            <hr class="w-52 border-b-2 border-main-light mb-2">
+        </div>
+
+        <h1 class="text-center text-3xl font-semibold text-pink mb-8">BLOG</h1>
+
+        <div class="flex justify-center">
+            <hr class="w-52 border-b-2 border-main-light mb-12 -mt-6">
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="blog-image.jpg" alt="Baby Feet" class="w-full rounded-lg">
-                <h2 class="text-xl font-semibold my-4">Should I Freeze My Eggs</h2>
-                <p class="text-gray-600">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
-                <button class="mt-4 bg-[#b47b6f] text-white px-4 py-2 rounded-lg">READ MORE</button>
+                <img src="static/blog-image.png" alt="Baby Feet" class="w-full rounded-lg">
+                <h2 class="text-xl text-main font-semibold my-4">Should I Freeze My Eggs</h2>
+                <p class="text-gray-600 text-sm">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
+                <div class="flex justify-center">
+                    <button class="mt-4 bg-white text-main-light px-4 py-2 border-2 w-44 border-main-light rounded-full">READ MORE</button>
+                </div>
             </div>
-            <!-- Duplicate this card as needed -->
             <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="blog-image.jpg" alt="Baby Feet" class="w-full rounded-lg">
-                <h2 class="text-xl font-semibold my-4">Should I Freeze My Eggs</h2>
-                <p class="text-gray-600">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
-                <button class="mt-4 bg-[#b47b6f] text-white px-4 py-2 rounded-lg">READ MORE</button>
+                <img src="static/blog-image.png" alt="Baby Feet" class="w-full rounded-lg">
+                <h2 class="text-xl text-main font-semibold my-4">Should I Freeze My Eggs</h2>
+                <p class="text-gray-600 text-sm">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
+                <div class="flex justify-center">
+                    <button class="mt-4 bg-white text-main-light px-4 py-2 border-2 w-44 border-main-light rounded-full">READ MORE</button>
+                </div>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="blog-image.jpg" alt="Baby Feet" class="w-full rounded-lg">
-                <h2 class="text-xl font-semibold my-4">Should I Freeze My Eggs</h2>
-                <p class="text-gray-600">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
-                <button class="mt-4 bg-[#b47b6f] text-white px-4 py-2 rounded-lg">READ MORE</button>
+                <img src="static/blog-image.png" alt="Baby Feet" class="w-full rounded-lg">
+                <h2 class="text-xl text-main font-semibold my-4">Should I Freeze My Eggs</h2>
+                <p class="text-gray-600 text-sm">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
+                <div class="flex justify-center">
+                    <button class="mt-4 bg-white text-main-light px-4 py-2 border-2 w-44 border-main-light rounded-full">READ MORE</button>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="static/blog-image.png" alt="Baby Feet" class="w-full rounded-lg">
+                <h2 class="text-xl text-main font-semibold my-4">Should I Freeze My Eggs</h2>
+                <p class="text-gray-600 text-sm">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
+                <div class="flex justify-center">
+                    <button class="mt-4 bg-white text-main-light px-4 py-2 border-2 w-44 border-main-light rounded-full">READ MORE</button>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="static/blog-image.png" alt="Baby Feet" class="w-full rounded-lg">
+                <h2 class="text-xl text-main font-semibold my-4">Should I Freeze My Eggs</h2>
+                <p class="text-gray-600 text-sm">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
+                <div class="flex justify-center">
+                    <button class="mt-4 bg-white text-main-light px-4 py-2 border-2 w-44 border-main-light rounded-full">READ MORE</button>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="static/blog-image.png" alt="Baby Feet" class="w-full rounded-lg">
+                <h2 class="text-xl text-main font-semibold my-4">Should I Freeze My Eggs</h2>
+                <p class="text-gray-600 text-sm">Modern reproductive technologies have evolved and progressed for the last decades which has given a chance...</p>
+                <div class="flex justify-center">
+                    <button class="mt-4 bg-white text-main-light px-4 py-2 border-2 w-44 border-main-light rounded-full">READ MORE</button>
+                </div>
             </div>
         </div>
         <div class="flex justify-center mt-10">
-            <button class="bg-[#b47b6f] text-white px-6 py-3 rounded-lg">SEE MORE</button>
+            <button class="bg-main text-white px-6 py-3 rounded-full w-40 h-10 text-center items-center flex justify-center shadow-md shadow-main-light">SEE MORE</button>
         </div>
     </main>
     
-    <footer class="bg-[#d1a89e] text-white py-10 mt-10">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between px-4">
-            <div>
-                <h3 class="text-lg font-semibold">PARENS</h3>
-                <p>"From Hope to Happiness, We Walk Beside You"</p>
-                <p>SSA Kostia Levytskoho Str., Lviv, Ukraine, 79017</p>
-                <p>SCHEDULE: Mon-Fri: 08:00-19:00 | Sat: 10:00-15:00 | Sun: day off</p>
+    <footer class="bg-main text-white py-10 mt-10 flex-row justify-evenly">
+        <div class="container mx-auto flex md:flex-row justify-between px-4">
+            <div class="flex-col w-80">
+                <img src="static/logo_footer.png" alt="Logo Footer" class="w-20">
+                <p>"From Hope to Happiness,
+                    We Walk Beside You"</p>
+                <div class="flex-col font-thin text-xs">
+                    <p>55А Kostia Levytskoho Str., Lviv, Ukraine, 79017</p>
+                    <p>SCHEDULE</p>
+                    <p>From 08:00–19:00</p>
+                    <p>Sat: 10:00–15:00</p>
+                    <p>Sun: day off</p>
+                </div>
             </div>
-            <div>
-                <h4 class="text-lg font-semibold">Contacts</h4>
-                <p>English: +38 066 418 77 73</p>
-                <p>Polish: +38 066 419 77 73</p>
-                <p>Email: info@parensinternational.com</p>
-                <p>Support: support@parensinternational.com</p>
+            <div class="flex gap-4">
+                <div class="flex-col w-40 text-xs font-thin">
+                    <p>About Parens Fertility</p>
+                    <p>Our team</p>
+                    <p>Price List</p>
+                    <p>IVF With Own Oocytes</p>
+                    <p>Egg Donation Program</p>
+                    <p>Tandem IVF</p>
+                    <p>Embryo Donation Program</p>
+                    <p>Frozen Embryo Transfer (FET)</p>
+                    <p>Egg Freezing</p>
+                    <p>Secure Egg Bank Program</p>
+                </div>
+                <div class="flex-col w-40 text-xs font-thin">
+                    <p>Surrogacy With Own Oocytes</p>
+                    <p>Surrogacy With Donor’s Oocytes</p>
+                    <p>Surrogacy With Frozen Embryo Transfer (FET)</p>
+                    <p>Intrauterine Insemination (IUI)</p>
+                    <p>PGD by NGS</p>
+                    <p>Laboratory Tests And Diagnostic Procedures</p>
+                    <p>Blog</p>
+                    <p>Contacts</p>
+                </div>
             </div>
+            <div class="flex-col w-80">
+                <h2>English +38 066 418 77 73</h2>
+                <h2>Polish +38 066 419 77 73</h2>
+                <div class="font-thin">
+                    <p>info@parensinternational.com</p>
+                    <p>support@parensinternational.com</p>
+                </div>
+                <div class="flex gap-5 mt-1 text-2xl">
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-whatsapp' ></i>
+                    <i class='bx bxl-linkedin-square' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-10">
+        <div class="flex font-thin text-sm justify-center">
+            <p class="mt-4">Copyright © 2023 - Parens International</p>
         </div>
     </footer>
 </body>
